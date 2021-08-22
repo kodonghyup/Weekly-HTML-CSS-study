@@ -1,0 +1,107 @@
+/* Header */
+
+body {
+    position: relative;
+}
+
+.header__container {
+    width: 100vw;
+    height: 80px;
+}
+
+.header__container__menu-box {
+    float: right;
+}
+
+.header__container__menu-box a {
+    margin-right: 20px;
+    color: #000;
+}
+
+.header__container__menu-box a:last-child {
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #9acd32;
+    border-radius: 50%;
+    color: white;
+}
+
+.header__container__menu-box a > img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Section */
+
+.section__container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section__container .section__container__img-wrapper {
+    width: 500px;
+}
+
+.section__container .section__container__img-wrapper img {
+    max-width: 100%;
+    padding: 50px 20%;
+    box-sizing: border-box;
+}
+
+.section__container .section__container__search-box__wrapper {
+    width: 40%;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    padding: 15px 0;
+}
+
+.section__container__search-box__wrapper .section__container__search-box__wrapper__inner {
+    width: 100%;
+    display: flex;
+}
+
+.section__container__search-box__wrapper .section__container__search-box__wrapper__inner img {
+    max-width: 2%;
+    max-height: 2%;
+    margin: 0 15px;
+    box-sizing: border-box;
+}
+
+.section__container__search-box__wrapper .section__container__search-box__wrapper__inner input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+.section__container__favorite__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section__container__favorite__wrapper .section__container__favorite__wrapper__inner {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    line-height: 30px;
+
+    margin: 10px 0;
+}
+
+.section__container__favorite__wrapper .section__container__favorite__wrapper__inner img {
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+}
