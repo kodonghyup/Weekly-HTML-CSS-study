@@ -6,49 +6,71 @@
     <title>Document</title>
     <style>
         #header {
-            width: 1451px;
+            width: 100vw;
             height: 60px;
-            padding: 6px;
-        } 
-        #contents {
-            width: 1451px;
-            height: 290px;
-            margin: auto;
         }
-        h1 {
-            position: relative;
-            top: 180px;
+
+        #header a {
+            float: right;
+            margin: 20px;
+        }
+
+        .contents {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contents .google {
+            padding: 50px 100px;
             text-align: center;
         }
-        input {
+
+        .contents .search {
             border: 1px solid #bbb;
             border-radius: 20px;
-            padding: 5px 8px 0px 14px;
-            width: 560px;
-            height: 39px;
+            width: 40%;
             font-size: 14px;
-            position: relative;
-        }
-        .search {
             text-align: center;
+            display: flex;
+        }
+
+        .contents .search input {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .contents .search img {
+            max-width: 2%;
+            max-height: 2%;
+            margin: 0 15px;
+            box-sizing: border-box;
         }
     </style>
 </head>
 
 <body>
-        <header id="header">
+    <header id="header">
+        <a> <img src="menu.png" alt="메뉴" width="20" height="20"> </a>
+        <a>이미지</a>
+        <a>Gmail</a>
+    </header>
+    <section class="contents">
 
-        </header>
-        <section id="contents">
-            <h1>
-                <img src="google.png" alt="구글" height="92" width="272">
-            </h1>
-        </section>
-        <div class="search">
-            <label for="user"></label>
-            <input type="search" id="user" placeholder="Google 검색 또는 URL 입력">
+        <div class="google">
+            <img src="google.png" alt="구글">
         </div>
 
+        <div class="search">
+            <img src="search.png" alt="검색">
+            <input type="search" id="user" placeholder="Google 검색 또는 URL 입력">
+            <img src="mic.png" alt="마이크">
+        </div>
+
+    </section>
 </body>
 
 </html>
