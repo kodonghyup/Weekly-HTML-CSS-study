@@ -51,6 +51,28 @@
             border: none;
         }
 
+        .contents .plus {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .contents .plus .inner {
+            background-color: #eee;
+            margin: 30px;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            padding: 10px 10px;
+            line-height: 30px;
+        }
+
+        .contents .plus .inner img {
+            width: 20px;
+            height: 20px;
+        }
     </style>
 </head>
 
@@ -71,7 +93,11 @@
             <input type="search" id="user" placeholder="Google 검색 또는 URL 입력">
             <img src="mic.png" alt="마이크">
         </div>
-
+        <div class="plus">
+            <div class="inner">
+        <img src="plus.png" alt="plus">
+    </div>  
+    </div>
     </section>
 </body>
 
